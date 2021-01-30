@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Birthday_Celebrations.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Birthday_Celebrations.Entities
 {
-    public class Citizen: SocietyMember
+    public class Citizen: SocietyMember, IBirthdate
     {
         public Citizen(string id, string name, int age, string birthDate)
             :base (id)

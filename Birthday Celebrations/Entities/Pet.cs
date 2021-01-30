@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Birthday_Celebrations.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Birthday_Celebrations.Entities
 {
-    public class Pet: SocietyMember
+    public class Pet: IBirthdate
     {
-        public Pet(string id, string name, string birthDate)
-            :base(id)
+        public Pet(string name, string birthDate)
         {
             Name = name;
             BirthDate = birthDate;
